@@ -1,6 +1,9 @@
 CREATE DATABASE game_engine;
 USE game_engine;
 
+CREATE USER frog_admin;
+GRANT ALL PRIVILEGES ON game_engine.* TO 'frog_admin'@'localhost';
+
 CREATE TABLE persona (
   persona_id INT AUTO_INCREMENT,
   character_class_id INT,
